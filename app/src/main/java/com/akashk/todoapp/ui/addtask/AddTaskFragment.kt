@@ -39,7 +39,7 @@ class AddTaskFragment : Fragment() {
 
         viewModel.isAdded.observe(viewLifecycleOwner, Observer { isAdded ->
             if (isAdded) {
-               // view?.findNavController()?.popBackStack()
+                view?.findNavController()?.popBackStack()
             }
         })
 
